@@ -1,0 +1,11 @@
+extends ../../layouts/default
+
+include ../../components/news/_item
+
+block content
+  h1(
+    data-view='news/index'
+    data-key='title'
+  )= title
+  each item in news
+    +newsItem(item)

@@ -1,0 +1,52 @@
+{
+  "description": "nullFront dev server",
+  "version": "0.0.2",
+  "deprecated": false,
+  "license": "ISC",
+  "name": "@greenminds/nf-dev-server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenminds"
+  },
+  "scripts": {
+    "lint": "run-s lint:*",
+    "lint-fix": "run-s \"lint:* -- --fix\"",
+    "lint:js": "eslint ."
+  },
+  "author": {
+    "name": "Vassiliy Pimkin",
+    "email": "vpimkin@greenminds.ru"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@greenminds/nf-app-logic": "0.0.4",
+    "await-exec": "^0.1.2",
+    "babelify": "^10.0.0",
+    "body-parser": "^1.19.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.5.0",
+    "del": "^5.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "event-stream": "^4.0.1",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^3.0.1",
+    "gulp-js-to-json": "^1.1.2",
+    "gulp-live-server": "0.0.31",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "npm-run-all": "^4.1.5",
+    "pug": "^2.0.4",
+    "pugify": "^2.2.0",
+    "vinyl-source-stream": "^2.0.0",
+    "yargs": "^14.0.0"
+  }
+}

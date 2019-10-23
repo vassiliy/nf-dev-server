@@ -1,0 +1,28 @@
+extends ../../layouts/default
+
+block content
+  h1= title
+
+  p
+    strong Default view applied
+  div.row
+    div.col-6
+      p
+        img(
+          src= asset(pic)
+          class= "fit-width"
+        )
+      p.clear
+    div.col-6
+      h2 Very Important Pianist
+      p
+        strong with the best boss he'd ever had
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      ul
+        each value, key in hash
+          li
+            strong= key
+            span : 
+            span= value
+      p
+        a(href= link(firstLink)) Visit Home page

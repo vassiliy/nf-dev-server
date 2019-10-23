@@ -1,0 +1,15 @@
+div(
+  data-component='news/item'
+  data-id=item.id || 1
+)
+  h3(
+    data-key='title'
+  )= item.title
+  p
+    img(
+      src=`${item.image}`
+      style='width: 67%;'
+    )
+  p(
+    data-key='content'
+  )= item.content

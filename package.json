@@ -1,6 +1,6 @@
 {
   "description": "nullFront dev server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "deprecated": false,
   "license": "ISC",
   "name": "@greenminds/nf-dev-server",

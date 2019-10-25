@@ -1,0 +1,19 @@
+pipelines:
+  default:
+    - step:
+        name: Compress
+        script:
+          - git archive --format=tar.gz master -o app.tar.gz
+        artifacts:
+          - app.tar.gz
+    - step:
+        name: Deploy to microservice
+        deployment: production
+        caches:
+          - node
+        script:
+          - pipe: atlassian/heroku-deploy:0.1.1
+            variables:
+              HEROKU_API_KEY: $HEROKU_API_KEY
+              HEROKU_APP_NAME: $HEROKU_APP_NAME
+              ZIP_FILE: app.tar.gz

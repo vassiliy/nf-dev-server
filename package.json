@@ -19,16 +19,17 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
-    "@greenminds/nf-app-logic": "0.0.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@greenminds/nf-app-logic": "0.0.7",
     "await-exec": "^0.1.2",
     "babelify": "^10.0.0",
     "body-parser": "^1.19.0",
     "browser-sync": "^2.26.7",
     "browserify": "^16.5.0",
+    "ddry-mocha-tape": "^0.1.30",
     "del": "^5.1.0",
-    "eslint": "^6.1.0",
+    "eslint": "^6.7.2",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^10.0.0",
@@ -38,7 +39,7 @@
     "express": "^4.16.4",
     "faker": "^4.1.0",
     "gulp": "^4.0.2",
-    "gulp-csso": "^3.0.1",
+    "gulp-csso": "^4.0.1",
     "gulp-js-to-json": "^1.1.2",
     "gulp-live-server": "0.0.31",
     "gulp-sass": "^4.0.2",
@@ -47,6 +48,6 @@
     "pug": "^2.0.4",
     "pugify": "^2.2.0",
     "vinyl-source-stream": "^2.0.0",
-    "yargs": "^14.0.0"
+    "yargs": "^15.0.2"
   }
 }

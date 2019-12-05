@@ -1,0 +1,108 @@
+{
+  "spec": "spec",
+  "title": "nullFront development server spec suite",
+  "code": "server",
+  "outside": {
+    "gulp": "gulp",
+    "gulpHelpers": "gulp/helpers",
+    "arrayUtils": "utils/array"
+  },
+  "moduleTitles": {
+    "index": "server/index",
+    "lib": {
+      "config": {
+        "runtimes": "server/lib/config/runtimes",
+        "settings": {
+          "app-settings": "server/lib/config/settings/app-settings",
+          "default-keys": "server/lib/config/settings/default-keys",
+          "filter-keys": "server/lib/config/settings/filter-keys",
+          "settings-config": "server/lib/config/settings/settings-config",
+          "views": {
+            "index": "server/lib/config/settings/views/index",
+            "methods-001": "server/lib/config/settings/views/methods-001",
+            "methods-002": "server/lib/config/settings/views/methods-002"
+          }
+        },
+        "worker-server": "server/lib/config/worker-server"
+      },
+      "data": "server/lib/data",
+      "json": {
+        "default-fallback": "server/lib/json/default-fallback",
+        "index": "server/lib/json/index"
+      },
+      "routing-controller": {
+        "config": "server/lib/routing-controller/config",
+        "data": {
+          "dev-api": "server/lib/routing-controller/data/dev-api",
+          "index": "server/lib/routing-controller/data/index",
+          "pug-helpers": {
+            "index": "server/lib/routing-controller/data/pug-helpers/index"
+          }
+        },
+        "hosts": {
+          "helpers": "server/lib/routing-controller/hosts/helpers",
+          "index": "server/lib/routing-controller/hosts/index",
+          "make-helpers": {
+            "index": "server/lib/routing-controller/hosts/make-helpers/index",
+            "methods-001": "server/lib/routing-controller/hosts/make-helpers/methods-001",
+            "methods-002": "server/lib/routing-controller/hosts/make-helpers/methods-002"
+          }
+        },
+        "index": "server/lib/routing-controller/index",
+        "parse-route": {
+          "index": "server/lib/routing-controller/parse-route/index",
+          "or": "server/lib/routing-controller/parse-route/or"
+        },
+        "paths": {
+          "index": "server/lib/routing-controller/paths/index",
+          "named": "server/lib/routing-controller/paths/named",
+          "render": "server/lib/routing-controller/paths/render"
+        },
+        "render": {
+          "dev": "server/lib/routing-controller/render/dev",
+          "index": "server/lib/routing-controller/render/index",
+          "methods-001": "server/lib/routing-controller/render/methods-001",
+          "methods-002": "server/lib/routing-controller/render/methods-002",
+          "methods-003": "server/lib/routing-controller/render/methods-003"
+        },
+        "send-response": {
+          "get-payload": "server/lib/routing-controller/send-response/get-payload",
+          "index": "server/lib/routing-controller/send-response/index",
+          "respond": {
+            "index": "server/lib/routing-controller/send-response/respond/index",
+            "modes": "server/lib/routing-controller/send-response/respond/modes"
+          }
+        }
+      }
+    },
+    "server": "server/server",
+    "settings": "server/settings",
+    "gulp": {
+      "copy": "gulp/copy",
+      "create": "Create project from example markup Gulp task",
+      "css": "gulp/css",
+      "dataCore": "gulp/dataCore",
+      "dataRoot": "gulp/dataRoot",
+      "dataRoutes": "gulp/dataRoutes",
+      "del": "gulp/del",
+      "endpoints": "/",
+      "example": "Create project from example markup Gulp task",
+      "favicon": "gulp/favicon",
+      "from": "gulp/from",
+      "go": "gulp/go",
+      "js": "gulp/js",
+      "lint": "gulp/lint",
+      "root": "/",
+      "update": "gulp/update",
+      "views": "gulp/views"
+    },
+    "gulpHelpers": {
+      "exec": "gulp/helpers/exec",
+      "folders": "gulp/helpers/folders",
+      "mock-task": "Mock task function"
+    },
+    "arrayUtils": {
+      "index": "Array utils"
+    }
+  }
+}

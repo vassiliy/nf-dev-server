@@ -9,6 +9,8 @@
     "url": "git+https://github.com/greenminds"
   },
   "scripts": {
+    "test": "ddry-mocha",
+    "coverage": "nyc --reporter=lcov --reporter=text-summary npm test",
     "lint": "run-s lint:*",
     "lint-fix": "run-s \"lint:* -- --fix\"",
     "lint:js": "eslint ."

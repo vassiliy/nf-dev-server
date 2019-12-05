@@ -5,7 +5,7 @@
   "outside": {
     "gulp": "gulp",
     "gulpHelpers": "gulp/helpers",
-    "arrayUtils": "utils/array"
+    "array": "utils/array"
   },
   "moduleTitles": {
     "index": "server/index",

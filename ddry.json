@@ -6,7 +6,8 @@
     "gulp": "gulp",
     "gulpHelpers": "gulp/helpers",
     "array": "utils/array",
-    "cli": "utils/cli"
+    "cli": "utils/cli",
+    "detect": "utils/detect"
   },
   "moduleTitles": {
     "index": "server/index",

@@ -9,6 +9,7 @@ module.exports = {
     return ensure(given, fallback);
   },
   setName: (fn, name) => {
+    if (typeof fn !== 'function') throw new Error('First agrument is not a function');
     Object.defineProperty(fn, 'name', {
       value: name,
       configurable: true,

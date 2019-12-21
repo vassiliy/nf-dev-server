@@ -35,6 +35,6 @@ module.exports = (dd) => contexts(dd, {
         i: [[1, 2, 3, 4, 5], {}],
         e: 'Invalid array length',
       }],
-    }
+    },
   },
 });

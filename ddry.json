@@ -8,7 +8,11 @@
     "array": "utils/array",
     "cli": "utils/cli",
     "detect": "utils/detect",
-    "fn": "utils/fn"
+    "fn": "utils/fn",
+    "gulpHelpers/structure": "gulp/helpers/structure",
+    "gulpHelpers/structure/helpers": "gulp/helpers/structure/helpers",
+    "gulpHelpers/ensure-project-name": "gulp/helpers/ensure-project-name",
+    "gulpHelpers/ensure-project-name/wrap-task": "gulp/helpers/ensure-project-name/wrap-task"
   },
   "moduleTitles": {
     "index": "server/index",
@@ -103,6 +107,21 @@
       "exec": "gulp/helpers/exec",
       "folders": "gulp/helpers/folders",
       "mock-task": "Mock task function"
+    },
+    "gulpHelpers/structure": {
+      "index": "gulp/helpers/structure/index"
+    },
+    "gulpHelpers/structure/helpers": {
+      "data": "gulp/helpers/structure/helpers/data",
+      "index": "gulp/helpers/structure/helpers/index",
+      "methods-001": "gulp/helpers/structure/helpers/methods-001"
+    },
+    "gulpHelpers/ensure-project-name": {
+      "index": "Function ensuring that gulp task wrapped inside it receives `-p` parameter"
+    },
+    "gulpHelpers/ensure-project-name/wrap-task": {
+      "index": "Error-protected gulp task wrapper",
+      "methods-001": "gulp/helpers/ensure-project-name/wrap-task/methods-001"
     },
     "arrayUtils": {
       "index": "Array utils"

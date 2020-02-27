@@ -12,7 +12,8 @@
     "gulpHelpers/structure": "gulp/helpers/structure",
     "gulpHelpers/structure/helpers": "gulp/helpers/structure/helpers",
     "gulpHelpers/ensure-project-name": "gulp/helpers/ensure-project-name",
-    "gulpHelpers/ensure-project-name/wrap-task": "gulp/helpers/ensure-project-name/wrap-task"
+    "gulpHelpers/ensure-project-name/wrap-task": "gulp/helpers/ensure-project-name/wrap-task",
+    "gulpHelpers/project-exists": "gulp/helpers/project-exists"
   },
   "moduleTitles": {
     "index": "server/index",
@@ -108,6 +109,22 @@
       "folders": "gulp/helpers/folders",
       "mock-task": "Mock task function"
     },
+    "array": {
+      "index": "Array utils"
+    },
+    "cli": {
+      "index": "utils/cli/index",
+      "methods-001": "utils/cli/methods-001"
+    },
+    "detect": {
+      "index": "utils/detect/index",
+      "methods-001": "utils/detect/methods-001",
+      "methods-002": "utils/detect/methods-002"
+    },
+    "fn": {
+      "index": "utils/fn/index",
+      "methods-001": "utils/fn/methods-001"
+    },
     "gulpHelpers/structure": {
       "index": "gulp/helpers/structure/index"
     },
@@ -123,8 +140,10 @@
       "index": "Error-protected gulp task wrapper",
       "methods-001": "gulp/helpers/ensure-project-name/wrap-task/methods-001"
     },
-    "arrayUtils": {
-      "index": "Array utils"
+    "gulpHelpers/project-exists": {
+      "index": "Function checking if given project exists",
+      "methods-001": "Function checking if given project exists level I methods",
+      "methods-002": "gulp/helpers/project-exists/methods-002"
     }
   }
 }

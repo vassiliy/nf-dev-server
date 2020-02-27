@@ -5,15 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const checkFolder = (projectsPath) => (projectName) => {
-  let folderList;
-  try {
-    folderList = fs.readdirSync(projectsPath);
-  } catch (e) {
-    folderList = [];
-  }
-  return folderList.indexOf(projectName) > -1;
-};
+const {checkFolder} = require('./methods-002');
 
 const getPath = (pathStub) => {
   const relative = pathStub || '../../../../../../projects';
@@ -21,6 +13,6 @@ const getPath = (pathStub) => {
 };
 
 module.exports = {
-  checkFolder,
+  checkFolder: checkFolder(fs),
   getPath,
 };

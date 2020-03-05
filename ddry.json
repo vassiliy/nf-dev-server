@@ -9,6 +9,8 @@
     "cli": "utils/cli",
     "detect": "utils/detect",
     "fn": "utils/fn",
+    "list": "utils/list",
+    "pipe": "utils/pipe",
     "gulpHelpers/structure": "gulp/helpers/structure",
     "gulpHelpers/structure/helpers": "gulp/helpers/structure/helpers",
     "gulpHelpers/ensure-project-name": "gulp/helpers/ensure-project-name",
@@ -124,6 +126,12 @@
     "fn": {
       "index": "utils/fn/index",
       "methods-001": "utils/fn/methods-001"
+    },
+    "list": {
+      "index": "utils/list/index",
+      "methods-001": "utils/list/methods-001",
+      "methods-002": "utils/list/methods-002",
+      "methods-003": "utils/list/methods-003"
     },
     "gulpHelpers/structure": {
       "index": "gulp/helpers/structure/index"

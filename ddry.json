@@ -9,8 +9,10 @@
     "cli": "utils/cli",
     "detect": "utils/detect",
     "fn": "utils/fn",
+    "string": "utils/string",
     "list": "utils/list",
     "pipe": "utils/pipe",
+    "regexp": "utils/regexp",
     "gulpHelpers/structure": "gulp/helpers/structure",
     "gulpHelpers/structure/helpers": "gulp/helpers/structure/helpers",
     "gulpHelpers/ensure-project-name": "gulp/helpers/ensure-project-name",
@@ -127,11 +129,20 @@
       "index": "utils/fn/index",
       "methods-001": "utils/fn/methods-001"
     },
+    "string": {
+      "index": "utils/string/index"
+    },
     "list": {
       "index": "utils/list/index",
       "methods-001": "utils/list/methods-001",
       "methods-002": "utils/list/methods-002",
       "methods-003": "utils/list/methods-003"
+    },
+    "pipe": {
+      "index": "utils/pipe/index",
+      "methods-001": "utils/pipe/methods-001",
+      "methods-002": "utils/pipe/methods-002",
+      "methods-003": "utils/pipe/methods-003"
     },
     "gulpHelpers/structure": {
       "index": "gulp/helpers/structure/index"

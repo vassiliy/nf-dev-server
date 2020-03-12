@@ -8,6 +8,7 @@ module.exports = {
   },
   ensure: (passCondition) => ((typeof passCondition === 'function') ? passCondition : defaultPass),
   failed: (fn) => typeof fn !== 'function',
+  // Don't understand:
   getSubjectFn: (op) => {
     if (typeof op === 'function') return op;
     if (!Array.isArray(op)) return false;
@@ -15,6 +16,7 @@ module.exports = {
     if (typeof subject !== 'function') return false;
     return subject;
   },
+  // Don't understand:
   isAsync: (subjectFn, detected) => {
     const asyncCount = (subjectFn.constructor.name === 'AsyncFunction') ? 1 : 0;
     return detected + asyncCount;

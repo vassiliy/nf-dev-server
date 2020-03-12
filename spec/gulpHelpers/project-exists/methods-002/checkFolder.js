@@ -2,7 +2,7 @@ const fs = {
   readdirSync: (pathName) => {
     if (pathName === 'invalid') throw new Error('path invalid');
     return ['project1', 'project2'];
-  }
+  },
 };
 
 module.exports = (dd, that) => {

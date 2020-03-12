@@ -3,7 +3,7 @@ module.exports = (dd, that) => {
     {
       it: 'works',
       i: [],
-      e: undefined
-    }
-   ]);
+      e: undefined,
+    },
+  ]);
 };

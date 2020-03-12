@@ -7,7 +7,7 @@ module.exports = (dd) => {
           i: ['ProjectName'],
           e: 'ProjectName',
         },
-      ])
+      ]);
     });
     dd.context('with slash-terminated path given', () => {
       dd.drive([
@@ -16,8 +16,8 @@ module.exports = (dd) => {
           i: ['projects/deep/deep/deep/inside/projectName/'],
           e: 'deep/deep/deep/inside/projectName',
         },
-      ])
-    })
+      ]);
+    });
     dd.context('with non-slash-terminated path given', () => {
       dd.drive([
         {
@@ -25,7 +25,7 @@ module.exports = (dd) => {
           i: ['projects/deep/deep/deep/inside/projectName'],
           e: 'deep/deep/deep/inside/projectName',
         },
-      ])
-    })
+      ]);
+    });
   });
 };

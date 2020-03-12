@@ -8,8 +8,8 @@ module.exports = (dd, that) => {
     },
     {
       it: 'if a pass condition is specified, return it',
-      i: [x => x > 5],
-      e: x => x > 5,
+      i: [(x) => x > 5],
+      e: (x) => x > 5,
     },
   ]);
 };

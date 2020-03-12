@@ -17,7 +17,7 @@ module.exports = (dd) => {
         it:  'returns an empty list otherwise',
         i: [{hello: 'world'}],
         e: [],
-      }
+      },
     ]);
   });
 };

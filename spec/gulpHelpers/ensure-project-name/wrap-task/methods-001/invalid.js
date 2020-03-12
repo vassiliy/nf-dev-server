@@ -7,7 +7,7 @@ module.exports = (dd) => {
           i: ['ProjectName'],
           e: false,
         },
-      ])
+      ]);
     });
     dd.context('with non-string given', () => {
       dd.drive([
@@ -16,7 +16,7 @@ module.exports = (dd) => {
           i: [{'project': 'name'}],
           e: true,
         },
-      ])
-    })
+      ]);
+    });
   });
 };

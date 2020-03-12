@@ -1,8 +1,7 @@
 
-
 const fakeTask = (projectName) => `Hello, ${projectName}!`;
 
-module.exports = async (dd, that) => {
+module.exports = async(dd, that) => {
 
   dd.drive([
     {
@@ -21,19 +20,19 @@ module.exports = async (dd, that) => {
     invalidProjectNameResult = 1;
   }
 
-  dd.context( 'Returns a function which accepts a task and runs it if the '
-             +'project name is correct (projectName)',  () => {
-    
+  dd.context('Returns a function which accepts a task and runs it if the '
+             + 'project name is correct (projectName)',  () => {
+
     dd.context('with valid -p option given',  () => {
-      
+
       dd.drive([
         {
           matcher: 'plain',
           it: 'run the given task with the project name as argument',
           i: validProjectNameResult,
-          e: `Hello, hello/world!`,
+          e: 'Hello, hello/world!',
         },
-      ])
+      ]);
     });
 
     dd.context('without -p option given',  () => {
@@ -44,7 +43,7 @@ module.exports = async (dd, that) => {
           i: invalidProjectNameResult,
           e: 1,
         },
-      ])
+      ]);
     });
 
   });

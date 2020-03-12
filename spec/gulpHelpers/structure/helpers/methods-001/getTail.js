@@ -1,6 +1,6 @@
 module.exports = (dd) => {
-  dd.context( 'Converts file extension to a glob mask for finding'
-             +'files with that extension(xtn)', () => {
+  dd.context('Converts file extension to a glob mask for finding'
+             + 'files with that extension(xtn)', () => {
     dd.context('with an extension given', () => {
       dd.drive([
         {
@@ -8,7 +8,7 @@ module.exports = (dd) => {
           i: ['txt'],
           e: '**/*.txt',
         },
-      ])
+      ]);
     });
     dd.context('with non-string given', () => {
       dd.drive([
@@ -17,7 +17,7 @@ module.exports = (dd) => {
           i: [undefined],
           e: '**/*',
         },
-      ])
+      ]);
     });
   });
 };

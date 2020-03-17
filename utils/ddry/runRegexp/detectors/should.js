@@ -3,7 +3,7 @@ module.exports = {
     .map((e, i) => [e, output[i]])
     .map(([old, new_]) => ({
       matcher: 'plain',
-      it: `${old} => ${new_}`,
+      it: `'${old}'' => '${new_}'`,
       i: [old, old.replace(regexp, given)],
       e: [old, new_],
     })),
@@ -23,5 +23,14 @@ module.exports = {
       e: [string, true],
     })
   ),
+  find: ({inside, finds}) => (regexp) => inside
+    .map((e, i) => [e, finds[i]])
+    .map(
+      ([string, groups]) => ({
+        matcher: 'plain',
+        it: `${groups} in ${string}`,
+        i: [string, [...string.matchAll(regexp)].map(x => [...x])],
+        e: [string, groups]
+    })),
 
 };

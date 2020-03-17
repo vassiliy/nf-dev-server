@@ -28,7 +28,7 @@ module.exports = {
     .map(
       ([string, groups]) => ({
         matcher: 'plain',
-        it: `${groups} in ${string}`,
+        it: `${JSON.stringify(groups)} in ${string}`,
         i: [string, [...string.matchAll(regexp)].map(x => [...x])],
         e: [string, groups]
     })),

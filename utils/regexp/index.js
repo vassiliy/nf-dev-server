@@ -3,7 +3,7 @@ module.exports = require('./make')({
   removeMultipleWS: /\s+/g,
   removeSingleEdgeSpace: /^ | $/g,
 
-  tabCompletedProjectPath: /^projects[/\\](?=[^/\\])(.+[^/\\])[/\\]?$/,
+  tabCompletedProjectPath: /^projects[/\\](?![/\\][/\\])(.+[^/\\])[/\\]?$/,
 
   jsFile: /\.js$/,
 

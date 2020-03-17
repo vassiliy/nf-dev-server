@@ -1,12 +1,9 @@
 const detect = require('../../../../utils/detect');
 
-const {
-  slashTabCompletedProjectPath,
-  tabCompletedProjectPath
-} = require('../../../../utils/regexp');
+const {tabCompletedProjectPath} = require('../../../../utils/regexp');
 
 const fromRegexp = (regexp, string) => (group) => {
-  const result = regexp.exec(string);
+  const result = string.match(regexp);
   if (!result) return false;
   return result[group];
 };

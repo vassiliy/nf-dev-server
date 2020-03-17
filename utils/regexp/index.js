@@ -2,6 +2,11 @@ module.exports = require('./make')({
   firstWordLetter: /\b\w/g,
   removeMultipleWS: /\s+/g,
   removeSingleEdgeSpace: /^ | $/g,
-  username: /^[a-zA-Z0-9_.-]+$/g,
+
+  slashTabCompletedProjectPath: /^projects[/\\](?=[^/\\])(.+)[/\\]$/,
+  tabCompletedProjectPath: /^projects[/\\](?=[^/\\])(.+[^/\\])$/,
+
+  jsFile: /\.js$/,
+
   builder: (string) => [`^${string}$`, 'g'],
 });

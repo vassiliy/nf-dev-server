@@ -14,9 +14,7 @@ const fromRegexp = (regexp, string) => (group) => {
 module.exports = {
   invalid: (projectName) => typeof projectName !== 'string',
   extract: (projectName) => detect(projectName, {
-    slashTabCompleted: (name) => 
-      fromRegexp(slashTabCompletedProjectPath, name)(1),
-    tabCompleted: (name) => 
+    tabCompleted: (name) =>
       fromRegexp(tabCompletedProjectPath, name)(1),
     unchanged: (name) => name,
   }),

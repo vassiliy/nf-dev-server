@@ -1,6 +1,7 @@
 const run = require('../../../utils/ddry/runRegexp');
 
-const extend = regexpModule => ({...regexpModule,
+const extend = (regexpModule) => ({
+  ...regexpModule,
   generated: regexpModule.builder('helloWorld'),
 });
 
@@ -27,7 +28,7 @@ module.exports = (dd, that) => run(dd, extend(that), {
       it: 'removes a space at the beginning or at the end of a string',
       given: '',
       replaces: [' <--here', 't h e r e -- > ', ' around '],
-      with: ['<--here', 't h e r e -- >', 'around']
+      with: ['<--here', 't h e r e -- >', 'around'],
     },
   ],
 
@@ -36,22 +37,22 @@ module.exports = (dd, that) => run(dd, extend(that), {
       it: 'extracts project name from tab-completed path',
       inside: ['projects/a/b/c', 'projects/a/b/c/'],
       finds: [[['projects/a/b/c', 'a/b/c']],
-              [['projects/a/b/c/', 'a/b/c']]],
+        [['projects/a/b/c/', 'a/b/c']]],
     },
     {
       it: 'ignores strings which are not valid project paths',
-      bounces: ['wrong/path']
+      bounces: ['wrong/path'],
     },
   ],
 
   jsFile: [
     {
       it: 'detects filenames with .js extension',
-      tests: ['hello.js', 'world.old.js', '.js']
+      tests: ['hello.js', 'world.old.js', '.js'],
     },
     {
       it: 'ignores filenames without .js extension',
-      bounces: ['hello.javascript', 'world.js.old', 'node-js']
+      bounces: ['hello.javascript', 'world.js.old', 'node-js'],
     },
   ],
 

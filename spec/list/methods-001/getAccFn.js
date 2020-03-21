@@ -2,8 +2,8 @@ module.exports = (dd, that) => {
   dd.drive([
     {
       it: 'given a function, return it',
-      i: [[], (hello) => { world; }],
-      e: (hello) => { world; },
+      i: [[], () => 1],
+      e: () => 1,
     },
 
     {

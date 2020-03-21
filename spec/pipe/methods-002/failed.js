@@ -1,4 +1,4 @@
-module.exports = (dd, that) => {
+module.exports = (dd) => {
   dd.drive([
     {
       it: 'given a function, return false',
@@ -6,7 +6,7 @@ module.exports = (dd, that) => {
       e: false,
     },
     {
-      it: 'given a function, return false',
+      it: 'given a non-function, return true',
       i: ['this is not a function'],
       e: true,
     },

@@ -1,4 +1,4 @@
-module.exports = (dd, that) => {
+module.exports = (dd) => {
   dd.drive([
     {
       it: 'given an array, act like map',

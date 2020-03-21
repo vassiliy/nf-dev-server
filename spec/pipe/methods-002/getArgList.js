@@ -1,4 +1,4 @@
-module.exports = (dd, that) => {
+module.exports = (dd) => {
   dd.drive([
     {
       it: 'given no arguments, return an empty list',

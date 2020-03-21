@@ -1,4 +1,4 @@
-module.exports = (dd, that) => {
+module.exports = (dd) => {
   dd.drive([
     {
       it: 'if there is no error on the stack, proceed as usual',
